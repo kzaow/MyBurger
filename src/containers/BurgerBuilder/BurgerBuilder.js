@@ -7,6 +7,7 @@ import axios from "../../axios-orders";
 import Spinner from "../../UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 
+
 const FILLING_PRICES = {
   lettuce: 0.5,
   cheese: 1.0,
@@ -133,7 +134,7 @@ class BurgerBuilder extends Component {
 
     let orderSummary = null;
     let burger = this.state.error ? (
-      <p>FIllings can't be loaded</p>
+      <p>Fillings can't be loaded</p>
     ) : (
       <Spinner />
     );
