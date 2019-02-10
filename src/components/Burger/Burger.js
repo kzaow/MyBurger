@@ -1,6 +1,7 @@
 import React from "react";
 import "./Burger.css";
 import BurgerFillings from "./BurgerFillings/BurgerFillings";
+import { withRouter } from "react-router-dom";
 
 const burger = props => {
   let transformedFillings = Object.keys(props.fillings)
@@ -26,4 +27,4 @@ const burger = props => {
   );
 };
 
-export default burger;
+export default withRouter(burger);
